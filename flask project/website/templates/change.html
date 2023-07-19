@@ -1,0 +1,42 @@
+{% extends "home_page.html" %} {% block title %}Change Password{% endblock %}
+
+{% block style %}
+<style>
+    ul {
+        list-style: none;
+        position:absolute
+
+    }
+    ul.list{
+        float: center;
+        width: 450px;
+        height: 350px;
+        margin: 300px;
+        padding: 20px;
+        background-image: linear-gradient(to right,rgba(214, 74, 203, 0.925),blue);
+        border-radius: 25px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<form method="post"> 
+    <ul class="list">
+    <h1 align="center", style="color: blanchedalmond;">Change Password</h1>
+    <div class="form-group">
+        <label for="name">Name</label><br>
+        <input id="name", type="text", class="form-control", name="name", placeholder="Name">
+    </div>
+    <div class="form-group">
+        <label for="mobile_number">Mobile number:</label><br>
+        <input id="mobile_number", type="text", class="form-control", name='mobile_number', placeholder="Mobile number">
+    </div>
+    <div class="form-group">
+        <label for="password">New Password:</label><br>
+        <input id="new_password", type="password", name="new_password", class="form-control", placeholder="New Password">
+    </div>
+    <br>
+        <button type="submit", class="badge rounded-pill text-bg-primary">Change</button>
+</form>
+</ul> 
+{% endblock %}

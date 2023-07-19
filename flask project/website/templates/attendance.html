@@ -1,0 +1,51 @@
+{% extends "dashboard.html" %}
+<style>
+    .dashboard_content{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        top: 500px;
+    }
+    .dashboard_content .card{
+        position: relative;
+        width: 220px;
+        height: 250px;
+        background-color: rgba(214, 144, 247, 0.521);
+        top: 500px;
+    }
+    .dashboard_content .card .percent{
+        position: relative;
+        width: 150px;
+        height: 150px;
+    }
+    .dashboard_content .card .percent svg
+    {
+        position: relative;
+        width: 150px;
+        height: 150px;
+    }
+    .dashboard_content .card .percent svg circle{
+        width: 150px;
+        height: 150px;
+        fill: transparent;
+        stroke-width: 5;
+        stroke: #191919
+    }
+    .dashboard_content .card .percent svg circle:nth-child(2){
+        stroke: var(--clr);
+    }
+</style>
+{% block content %}
+<div class="dashboard_content">
+    <div class="card">
+        <div class="percent" style="--clr:#04fc43">
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70"></circle>
+            </svg>
+        </div>
+    </div>
+</div>
+{% endblock %}

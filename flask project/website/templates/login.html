@@ -1,0 +1,41 @@
+{% extends "home_page.html" %} {% block title %}Login{% endblock %}
+
+{% block style %}
+<style>
+    ul {
+        list-style: none;
+        position:absolute
+
+    }
+    ul.list{
+        float: center;
+        width: 450px;
+        height: 300px;
+        margin: 300px;
+        padding: 20px;
+        background-image: linear-gradient(to right,rgba(214, 74, 203, 0.925),blue);
+        border-radius: 25px;
+        border: 3px;
+        border-style: ridge;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<form method="post"> 
+    <ul class="list">
+    <h1 align="center", style="color: blanchedalmond;">Login</h1>
+    <div class="form-group">
+        <label for="mobile_number">Mobile number:</label><br>
+        <input id="mobile_number", type="text", class="form-control", name='mobile_number', placeholder="Mobile number">
+    </div>
+    <div class="form-group">
+        <label for="password">Password:</label><br>
+        <input id="password", type="password", name="Password", class="form-control", placeholder="password">
+    </div>
+    <br>
+        <button type="submit", class="badge rounded-pill text-bg-primary">Login</button>
+        <a href ="change" class="badge rounded-pill text-bg-primary" role="button">Forget Password</a>
+</form>
+</ul> 
+{% endblock %}

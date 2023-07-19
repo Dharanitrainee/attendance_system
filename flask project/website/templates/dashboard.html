@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>DASHBOARD</title>
+        <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="progress" style="--i:85;--clr:#43f94a;">
+                <h3>95<span>%</span></h3>
+                <h4>Days present</h4>
+            </div>
+            <div class="progress less" style="--i:15;--clr:#da0a0a;">
+                <h3>15<span>%</span></h3>
+                <h4>Days absent</h4>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" class="icon">
+                        <i class="fas fa-bars"></i>
+                    <span class="nav-item">Menu</span>
+                    </a>
+                </li>
+                <li><a href="#">
+                    <i class="fas fa-clipboard"></i>
+                    <span class="nav-item">Attendance</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="fas fa-user"></i>
+                    <span class="nav-item">Personal details</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="fas fa-rupee-sign"></i>
+                    <span class="nav-item">Salary</span>
+                </a></li>
+                <li><a href="#" class="logout">
+                    <i class="fas fa-sign-out-alt" aria-hidden="true"></i>
+                    <span class="nav-item">Logout</span>
+                </a></li>
+            </ul>
+        </nav>
+        </div>
+    </body>
+</html>
